@@ -83,7 +83,7 @@ type APIGatewayWebsocketProxyRequestContext struct {
 	RequestID          string                    `json:"requestId"`
 	Identity           APIGatewayRequestIdentity `json:"identity"`
 	ResourcePath       string                    `json:"resourcePath"`
-	Authorizer         map[string]interface{}    `json:"authorizer"`
+	Authorizer         string                    `json:"authorizer"`
 	HTTPMethod         string                    `json:"httpMethod"`
 	APIID              string                    `json:"apiId"` // The API Gateway rest API Id
 	ConnectedAt        int64                     `json:"connectedAt"`
